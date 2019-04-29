@@ -1,0 +1,119 @@
+@font-face
+{
+	font-family: 'police';
+	src : url('police/orange juice 2.0.ttf');
+}
+
+
+.header{
+	font-family:'police';
+	text-align: center;
+	font-size: 1cm;
+	margin-top: 70px;
+    padding-top: 0;
+    background-color: #FEFEFE;
+}
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul {
+margin: 0px;
+padding: 0px;
+}
+
+nav
+{ 
+width: 100%;
+background-color: darkgray;
+ }
+nav > ul > li 
+{
+	float: left;
+	position: relative;
+}
+ nav li{
+ 	list-style-type: none;
+ }
+ .submenu{
+ 	display: none;
+ }
+
+ nav li:hover .submenu
+ {
+ 	display: inline-block;
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 0px;
+ 	padding: 0px;
+ 	z-index: 10000;
+ }
+ .submenu li {
+ 	border-bottom: 1px solid #CCC;
+ }
+
+ .submenu li a{
+ 	padding: 15px 30px;
+ 	font-size: 13px;
+ 	color:black;
+ 	width: 270px;
+ }
+ nav > ul::after
+ {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+
+ }
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+.menu-categories .submenu{
+	background-color:lightslategray;
+}
+
+.menu-categories .submenu li:hover{
+	background-color:whitesmoke;
+}
+
+
+.text
+{
+	text-align: center;
+}
+
+.textarea
+{
+	text-align: left;
+
+}
+
+input
+{
+	margin-bottom: 15px;
+}
+
+.carreconnexion
+{
+	width: 200px;
+	height: 200px
+}
+.textareaconnexion
+{
+	width: 100px;
+}
+.validerconnexion
+{
+	height: 50px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Votre compte</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+
+	<div class ="header">
+		<h1>ECE AMAZON</h1>
+		</div>
+</head>
+<body>
+	
+
+	<div class="topnav">
+	<nav>
+		<ul>
+			<li class="menu-accueil"><a href="page d'accueil.html">ACCUEIL</a></li>
+			<li class="menu-categories"><a href="categories.html">CATEGORIES</a>
+				<ul class="submenu">
+					<li><a href="#">Musiques</a></li>
+					<li><a href="#">Sport et loisirs</a></li>
+					<li><a href="#">Vêtements</a></li>
+					<li><a href="#">Livres</a></li>
+</ul>
+			</li>
+			<li class="menu-vente_Flash"><a href="vente_Flash.html">VENTES FLASH</a></li>
+			<li class="menu-vendre"><a href="vendre.html">VENDRE</a></li>
+			<li class="menu-admin"><a href="admin.html">ADMIN</a></li>
+			<li class="menu-panier"><a href="panier.html">PANIER</a></li>
+			<li class="menu-connexion"><a href="connexion.html">CONNEXION</a></li>
+			<li class="menu-connexion"><a href="inscription.html">S'INSCRIRE</a></li>
+			<li class="menu-compte"><a href="compte.html">COMPTE</a></li>
+
+		</ul>
+	</nav>
+ </div>
+
+<center>
+			<h3>Formulaire d'inscription</h3>
+				
+<form method="post" action="Traitementinscription.php">
+				
+			<h4>Informations personnelles</h4>
+
+		</center>		
+				<div class= "text" style="float:left;width:50%;">
+					e_mail : </br> </br>
+					Pseudo : </br> </br>
+					Prenom : </br> </br>
+					Nom : </br> </br>
+					Mot de passe : <br> </br>
+					Adresse : </br> </br>
+					Code postal: </br> </br>
+					Ville : </br> </br>
+					Pays : </br> </br>
+					Numero de tel : </br> </br>	
+
+				</div>
+
+		<div class="textarea" style="float:left;width:50%;">
+ 
+ 		<input type="text" name="e-mail"></br>	
+		<input type="text" name="Pseudo"></br>
+		<input type="text" name="Prenom"></br>
+		<input type="text" name="Nom"></br>	
+		<input type="password" name="Mdp"></br>
+		<input type="text" name="Adresse"></br>
+		<input type="number" name="Codepostal"></br>
+		<input type="text" name="Ville"></br>
+		<input type="text" name="Pays"></br>
+		<input type="number" name="Telephone"></br>
+
+		</div>
+
+			
+
+				<center><h4>Informations de connexion</h4></center>
+
+				<div class="text" style="float:left;width:50%;">
+						Type de connexion : </br> </br>
+				</div>
+
+				<div class="textarea" style="float:left;width:50%;">
+
+					<input type="radio" name="Type" value="1">Acheteur
+					<input type="radio" name="Type" value="2">Vendeur
+					<input type="radio" name="Type" value="3">Admin</br></br></br>
+					
+				</div>
+<center><input type="submit" name="Submit"></center>
+		</form>
+	
+
+
+</body>
+</html>
