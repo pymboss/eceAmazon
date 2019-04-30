@@ -1,0 +1,239 @@
+@font-face
+{
+	font-family: 'police';
+	src : url('police/orange juice 2.0.ttf');
+}
+
+
+.header
+{
+	
+	height: 200px;
+	width: auto;
+	font-family:'police';
+	color: white;
+	text-align: center;
+	font-size: 1cm;
+   	background-image: url(banniere.png);
+   	background-attachment: fixed;
+
+
+}
+
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color: grey;
+
+}
+
+nav > ul {
+margin: 0px;
+padding: 0px;
+}
+
+nav
+{ 
+width: 100%;
+background-color: darkgray;
+ }
+nav > ul > li 
+{
+	float: left;
+	position: relative;
+}
+ nav li{
+ 	list-style-type: none;
+ }
+ .submenu{
+ 	display: none;
+ }
+
+ nav li:hover .submenu
+ {
+ 	display: inline-block;
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 0px;
+ 	padding: 0px;
+ 	z-index: 10000;
+ }
+ .submenu li {
+ 	border-bottom: 1px solid #CCC;
+ }
+
+ .submenu li a{
+ 	padding: 15px 30px;
+ 	font-size: 13px;
+ 	color:black;
+ 	width: 270px;
+ }
+ nav > ul::after
+ {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+
+ }
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+.menu-categories .submenu{
+	background-color:lightslategray;
+}
+
+.menu-categories .submenu li:hover{
+	background-color:whitesmoke;
+}
+
+.menu-compte .submenu{
+  background-color:lightslategray;
+}
+
+.menu-compte .submenu li:hover{
+  background-color:whitesmoke;
+}
+
+
+
+.text
+{
+	text-align: center;
+}
+
+.textarea
+{
+	text-align: left;
+
+}
+
+input
+{
+	margin-bottom: 15px;
+}
+
+.carreconnexion
+{
+	width: 200px;
+	height: 200px
+}
+.textareaconnexion
+{
+	width: 100px;
+}
+.validerconnexion
+{
+	height: 50px;
+}
+
+.gg-box {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-auto-rows:200px;
+    grid-gap:8px;
+}
+
+.gg-element img {
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.gg-element img:hover {
+    opacity: .90;
+}
+
+#gg-screen {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+}
+
+#gg-screen .gg-image {
+    height 100%;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#gg-screen .gg-image img {
+    max-width:100%;
+    max-height:100%;
+    margin:0 auto;
+}
+div#slider
+figure {
+  position: relative; 
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 0;
+  text-align: left;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+ 
+div#slider figure img { width: 20%; height: auto; float: center; }
+div#slider { width: 80%; max-width: 1000px; overflow: hidden }
+
+
+.card
+{
+	border-color: white;
+	border-width: 3px;
+
+}
+
+.footer
+{
+    padding: 0px;
+    text-align: center;
+    background:darkgray;
+    margin-top: 50px;
+    width: 100%;
+
+}
