@@ -43,16 +43,17 @@
 
 			<?php
 			
-   $base = mysql_connect ('localhost', 'root', '');
-mysql_select_db ('ece_amazon', $base) ;
-    $sql = 'SELECT * FROM item WHERE catégorie = "Livre"';
+			$database = "ece_amazon";
+			$db_handle = mysqli_connect('localhost', 'root', '');
+			$db_found = mysqli_select_db($db_handle, $database);
+    		$sql = "SELECT * FROM item WHERE categorie = 'Livre'";
     
-    $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
+    $result = mysqli_query($db_handle,$sql);
 
 // on va scanner tous les tuples un par un
-while ($data = mysql_fetch_array($req)) {
+while ($data = mysqli_fetch_assoc($result)) {
 	// on affiche les résultats
-	echo "id_ref" . $data['id_ref'] . '<br>';
+			echo "id_ref" . $data['id_ref'] . '<br>';
 	        echo "email_vendeur" . $data['email_vendeur'] . '<br>';
 	        echo "nom" . $data['nom'] . '<br>';
 	        echo "decription" . $data['description'] . '<br>';
@@ -60,15 +61,8 @@ while ($data = mysql_fetch_array($req)) {
 	        echo "prix" . $data['prix'] . '<br>';
 	        echo "nb_vendu" . $data['nb_vendu'] . '<br>';
 	        echo "categorie" . $data['categorie'] . '<br>'; 
-            echo "quantité" . $data['quantité'] . '<br><br><br>';
+            echo "quantité" . $data['quantite'] . '<br><br><br>';
 }
-mysql_free_result ($req);
-mysql_close ();
 ?>
-
-
-
-
-
 </body>
 </html>
