@@ -16,7 +16,7 @@
 	<div class="topnav">
 	<nav>
 		<ul>
-			<img src="img/logo.png"  width="50" style="float: left; padding-top: 10px; padding-left: 15px;">
+			<img src="img/logo.png"  width="55" style="float: left; padding-top: 10px; padding-left: 15px;">
 			<li class="menu-accueil"><a href="page d'accueil.php">ACCUEIL</a></li>
 			<li class="menu-categories"><a href="page d'accueil.php">CATEGORIES</a>
 				<ul class="submenu">
