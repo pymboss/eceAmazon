@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 30 avr. 2019 à 12:27
+-- Généré le :  mer. 01 mai 2019 à 10:48
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -115,8 +115,8 @@ CREATE TABLE IF NOT EXISTS `item` (
   `video` varchar(255) NOT NULL,
   `prix` float NOT NULL,
   `nb_vendu` int(255) NOT NULL DEFAULT '0',
-  `catégorie` varchar(255) NOT NULL,
-  `quantité` int(255) NOT NULL,
+  `categorie` varchar(255) NOT NULL,
+  `quantite` int(255) NOT NULL,
   PRIMARY KEY (`id_ref`),
   KEY `email_vendeur` (`email_vendeur`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `item` (
 -- Déchargement des données de la table `item`
 --
 
-INSERT INTO `item` (`id_ref`, `email_vendeur`, `nom`, `description`, `photo`, `video`, `prix`, `nb_vendu`, `catégorie`, `quantité`) VALUES
+INSERT INTO `item` (`id_ref`, `email_vendeur`, `nom`, `description`, `photo`, `video`, `prix`, `nb_vendu`, `categorie`, `quantite`) VALUES
 (1, 'pymboss@gmail.com', 'pull Ralph Lauren', 'Super pull très comfortable', 'pull ralph lauren1.jpg', '', 40, 0, 'Vetement', 34),
 (2, 'pymboss@gmail.com', 'Pull Ralph Lauren', '100% laine, très doux', 'pull ralph lauren2.jpg', '', 60, 0, 'Vetement', 24),
 (3, 'pymboss@gmail.com', 'Vinyle Angèle - Brol', 'Premier album d\'Angèle', 'Brol.jpg', '', 14.99, 0, 'Musique', 54),
@@ -243,7 +243,8 @@ INSERT INTO `utilisateur` (`email`, `mot_de_passe`, `nom`, `prenom`, `type`, `ph
 ('pymboss@gmail.com', 'grimpette', 'Massart', 'Pierre', 'Vendeur', ''),
 ('emma.guetienne@gmail.com', 'biquette', 'Guetienne', 'Emma', 'Acheteur', ''),
 ('j.dupont@gmail.com', 'jojo', 'Dupont', 'Joseph', 'Administrateur', ''),
-('jon.snow@got.com', 'got', 'Snow', 'Jon', 'Vendeur', '');
+('jon.snow@got.com', 'got', 'Snow', 'Jon', 'Vendeur', ''),
+('test', 'test', 'Test', 'TEST', 'Administrateur', '');
 
 -- --------------------------------------------------------
 
