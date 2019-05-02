@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>ECE AMAZON</title>
 	<link rel="stylesheet" href="styles.css" type="text/css">
@@ -51,52 +50,31 @@
  </div>
 
 
-<center>
-			<h3>Formulaire d'inscription</h3>
+
+  <center>
+			<h3>Formulaire d'inscription pour les admin</h3>
 				
-<form method="post" action="Traitementinscription.php">
+<form method="post" action="traitementadmin.php">
 				
-			<h4>Informations personnelles</h4>
+			<h4>Choix du pseudo</h4>
 
 		</center>		
 				<div class= "text" style="float:left;width:50%;">
-					email : </br> </br>
-					Prenom : </br> </br>
-					Nom : </br> </br>
-					mot de passe : <br> </br>
-					
-
-				</div>
-
-		<div class="textarea" style="float:left;width:50%;">
- 
- 		<input type="text" name="email"></br>	
-		<input type="text" name="prenom"></br>
-		<input type="text" name="nom"></br>	
-		<input type="password" name="mot_de_passe"></br>
-		
-
-		</div>
-
-			
-
-		<center><h4>Informations de connexion</h4></center>
-
-				<div class="text" style="float:left;width:50%;">
-						Type de connexion : </br> </br>
+					Pseudo: </br> </br>
 				</div>
 
 				<div class="textarea" style="float:left;width:50%;">
+ 
+ 		<input type="text" name="pseudo"></br>
 
-					<input type="radio" name="type" value="Acheteur">Acheteur
-					<input type="radio" name="type" value="Vendeur">Vendeur
-					<input type="radio" name="type" value="Administrateur">Admin</br></br></br>
-					
-				</div>
+
+
+</div>
 <center><input type="submit" name="Submit"></center>
-		</form>
-	
 
+</form>
 
 </body>
+
 </html>
+

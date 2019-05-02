@@ -1,7 +1,11 @@
 
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>ECE AMAZON</title>
 	<link rel="stylesheet" href="styles.css" type="text/css">
@@ -51,46 +55,68 @@
  </div>
 
 
-<center>
-			<h3>Formulaire d'inscription</h3>
+ <center>
+			<h3>Formulaire d'inscription pour les acheteurs</h3>
 				
-<form method="post" action="Traitementinscription.php">
+<form method="post" action="traitementinscriptionacheteur.php">
 				
 			<h4>Informations personnelles</h4>
 
 		</center>		
 				<div class= "text" style="float:left;width:50%;">
-					email : </br> </br>
-					Prenom : </br> </br>
-					Nom : </br> </br>
-					mot de passe : <br> </br>
+					adresse1 : </br> </br>
+					adresse2: </br> </br>
+					Ville : </br> </br>
+					Code postal : <br> </br>
+					Pays : <br> </br>
+					num tel : <br> </br>
 					
 
 				</div>
 
 		<div class="textarea" style="float:left;width:50%;">
  
- 		<input type="text" name="email"></br>	
-		<input type="text" name="prenom"></br>
-		<input type="text" name="nom"></br>	
-		<input type="password" name="mot_de_passe"></br>
-		
+ 		<input type="text" name="adresse_1"></br>	
+		<input type="text" name="adresse_2"></br>
+		<input type="text" name="ville"></br>	
+		<input type="number" name="code_postal"></br>
+		<input type="text" name="pays"></br>
+		<input type="tel" name="num_tel"></br>
+
 
 		</div>
 
 			
 
-		<center><h4>Informations de connexion</h4></center>
+		
 
-				<div class="text" style="float:left;width:50%;">
-						Type de connexion : </br> </br>
-				</div>
+				
 
-				<div class="textarea" style="float:left;width:50%;">
+ <div class="textarea" style="float:left;width:50%;">
+ <label for="type_carte_payement">Quelle carte de paiement ?</label><br />
+ <select name="carte" id="carte">
+           <option value="mastercard">Mastercard</option>
+           <option value="visa">Visa</option>
+           <option value="americanexpress">AmericanExpress</option>
+            
+       </select>
+</div>
 
-					<input type="radio" name="type" value="Acheteur">Acheteur
-					<input type="radio" name="type" value="Vendeur">Vendeur
-					<input type="radio" name="type" value="Administrateur">Admin</br></br></br>
+<div class= "text" style="float:left;width:50%;">
+
+                    
+					num carte : <br> </br>
+					nom carte : <br> </br>
+					date expiration : <br> </br>
+					code securite : <br> </br> 
+			</div>		
+
+       <div class="textarea" style="float:left;width:50%;">
+       		<input type="number" name="num_carte"></br>	
+       		<input type="text" name="nom_carte"></br>
+       		<input type="date" name="date_expiration"></br>	
+       		<input type="number" name="code_securite"></br>		
+
 					
 				</div>
 <center><input type="submit" name="Submit"></center>
